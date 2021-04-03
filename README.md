@@ -1,22 +1,27 @@
-# stellar-dataset
+# Stellar Dataset
 
-We ghatheread this dataset from Stellar Exchange network from Dec. 1st, 2018 until Dec. 30th 2019.
-These are sell and purchrase offers, you can download these files from [here](https://drive.google.com/drive/folders/19BlliamJnfxTQWerCqaEw9VzQjRcOEyi?usp=sharing). 
+We gathered this dataset from the Stellar Exchange network from Dec. 1, 2018 until Dec. 30, 2019.
+These are sell and purchase offers and you can download them from [here](https://drive.google.com/drive/folders/19BlliamJnfxTQWerCqaEw9VzQjRcOEyi?usp=sharing). 
 
 
 # How to Use this Dataset
-These files are [Mongodb](https://www.mongodb.com/) export, you should install mongodb first and then import theme into mongodb.
-After importing these files, you can query on theme.
+These files are [MongoDB](https://www.mongodb.com/) exports. You should install MongoDB first and then import them into MongoDB.
+After importing these files, you can run queries on them.
 
 # 1- Installation
-  install Mongodb based on your OS, [here](https://docs.mongodb.com/manual/installation/).
+Install the version of MongoDB compatible with your OS, [here](https://docs.mongodb.com/manual/installation/).
 # 2- Usage
-2- Import datasets into your Mongodb database by mongoshell commands.
+Import datasets into your MongoDB database by the following mongoshell commands:
 ```bash
 importmongodb --db=[YOUR_DATABSE_NAME] --collection=operation [OPERATION_FILE_NAME.json]
 importmongodb --db=[YOUR_DATABSE_NAME] --collection=ledgers [LEDGER_FILE_NAME.json]
 ```
-# Why we use Mongodb as our database?
-Mongodb is an unstructured database which facilate your performanse and processing speed while you use unstructured data.
+# Why Do We Use MongoDB as our Database?
+MongoDB is an unstructured database which speeds up your performance and processing speed while you use unstructured data.
 We had a huge data set with some null attributes.
-If you would like to learn [more](https://docs.mongodb.com/manual/indexes/) about indexing and improving query speed on this data set, you should use indexing in Mongodb.
+If you would like to learn more about about indexing and improving query speed on this data set, you should use [indexing in MongoDB](https://docs.mongodb.com/manual/indexes/).
+
+# How to Cite this Dataset?
+Our published conference paper is [available from ResearchGate](https://www.researchgate.net/publication/349732142_Collection_and_Analysis_of_Financial_Exchange_Data_on_the_Stellar_Blockchain).
+
+Citation: R. Hamidpour Badoe and S. Dorri Nogoorani, "Collection and Analysis of Financial Exchange Data on the Stellar Blockchain," _In Proceedings of the 6th International Conference on Distributed Computing and Big Data Processing_, Azarbaijan Shahid Madani University, Tabriz, Iran, Mar. 2021
